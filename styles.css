@@ -99,6 +99,207 @@ body{color:var(--ink);background:#f5f1e9;background-image:radial-gradient(#9d6b5
 .authors-section{background:radial-gradient(ellipse at 90% 10%,#e6d5c2 0,transparent 23%),linear-gradient(120deg,#f3e8dc,#edf1f5 48%,#e9e3da)}.authors-section:before{color:#9d6b5329}.author-card{background:linear-gradient(120deg,#fffdf8,#f7f1e9);border-color:#ded4c8}.author-card h3{color:#1f305f}.author-card p{font-size:12px;color:#566a82;line-height:1.7}.author-photo{display:block;flex:none;width:108px;height:137px;object-fit:cover;object-position:center 18%;border-radius:13px;border:3px solid #fff;box-shadow:0 5px 18px #25385830}.gislaine-photo{object-position:center 16%}.jonathan-photo{object-position:center 16%}.author-role{display:block;color:#8c604b;font:9px var(--mono);letter-spacing:.8px;margin:1px 0 5px}.author-focus{display:inline-block;margin-top:7px;padding:5px 8px;border-radius:20px;background:#e6ecf2;color:#4c6587!important;font:8px var(--mono)!important;letter-spacing:.5px}.authors-note{display:flex;gap:10px;padding:13px;border-radius:10px;background:#e6dfd5;color:#465a75}.authors-note>span{color:#936349}.authors-note p{margin:0;font-size:10px;line-height:1.6}.authors-note p b{color:#1f305f}.avatar-g,.avatar-j{box-shadow:0 0 0 5px #fff,0 0 0 7px #d9c6b2}.site-footer{background:linear-gradient(105deg,#1f305f,#304b78 65%,#58483d);border-image:linear-gradient(90deg,#9d6b53,#d2b08b,#6f8eaf,#304b78) 1}.site-footer>div a{color:#d3e1ef}
 .maria-logo-link{display:inline-flex;align-items:center;justify-content:center;min-width:204px;min-height:58px;padding:9px 15px;margin-bottom:15px;border-radius:10px;background:#1f305f;border:1px solid #ffffff44;box-shadow:0 7px 20px #19274435}.maria-logo{display:block;width:170px;max-height:42px;height:auto;object-fit:contain;filter:none}.maria-logo-link:hover{background:#17264c;transform:translateY(-2px)}.authors-layout{grid-template-columns:.72fr 1.28fr;gap:5%}.author-cards{gap:15px}.author-card{align-items:center;gap:17px;padding:17px}.author-card>div:last-child{min-width:0}.author-card h3{margin:4px 0 6px}.authors-note{margin-top:20px}.author-photo{transition:transform .25s}.author-card:hover .author-photo{transform:scale(1.035)}
 .badge-star.star-two{color:#d8e3f0}
+body.dark-mode {
+    --ink: #edf2fa;
+    --muted: #b5c1d1;
+    --paper: #111c2d;
+    --white: #202f45;
+    --navy: #101b2b;
+    --navy2: #263b59;
+    --coral: #d0a080;
+    --coral-light: #d9b994;
+    --aqua: #8ba9cc;
+    --gold: #d4b080;
+    --line: #40516a;
+
+    background: #111c2d;
+    color: #edf2fa;
+}
+
+/* Encabezado */
+body.dark-mode .site-header {
+    background: #091321;
+}
+
+/* Secciones principales */
+body.dark-mode .intro,
+body.dark-mode .comparison,
+body.dark-mode .models-section,
+body.dark-mode .engines-section,
+body.dark-mode .authors-section,
+body.dark-mode .takeaways-section {
+    background: #152238;
+    color: #edf2fa;
+}
+
+/* Fondos de secciones con degradados */
+body.dark-mode .models-section,
+body.dark-mode .comparison.section-wrap,
+body.dark-mode .engines-section,
+body.dark-mode .authors-section,
+body.dark-mode .takeaways-section {
+    background: linear-gradient(135deg, #142238, #1d2d43, #172438);
+}
+
+/* Títulos */
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .section-heading h2,
+body.dark-mode .maria-section-title h2 {
+    color: #f1f5fb;
+}
+
+/* Textos */
+body.dark-mode p,
+body.dark-mode .section-intro,
+body.dark-mode .feature-row p,
+body.dark-mode .class-card p,
+body.dark-mode .author-card p,
+body.dark-mode .engine-main p,
+body.dark-mode .fact p,
+body.dark-mode .card-bottom {
+    color: #bdc9d9;
+}
+
+/* Tarjetas */
+body.dark-mode .feature-row article,
+body.dark-mode .class-card,
+body.dark-mode .engine-panel,
+body.dark-mode .author-card,
+body.dark-mode .compare-wrap,
+body.dark-mode .definition-card,
+body.dark-mode .glossary-grid article,
+body.dark-mode .database-vs-tool article {
+    background: #22334b;
+    color: #edf2fa;
+    border-color: #40536d;
+}
+
+/* Títulos de las tarjetas */
+body.dark-mode .class-card h3,
+body.dark-mode .author-card h3,
+body.dark-mode .feature-row h3,
+body.dark-mode .engine-main h3 {
+    color: #f1f5fb;
+}
+
+/* Tabla comparativa */
+body.dark-mode .compare-wrap {
+    background: #202f45;
+}
+
+body.dark-mode .compare-wrap thead {
+    background: #0d192b;
+}
+
+body.dark-mode .compare-wrap th,
+body.dark-mode .compare-wrap td,
+body.dark-mode .compare-wrap tbody th,
+body.dark-mode .compare-wrap tbody td {
+    color: #d5dfec;
+    border-color: #40516a;
+}
+
+body.dark-mode .compare-wrap tbody tr:hover {
+    background: #2d405b;
+}
+
+/* Etiquetas y botones */
+body.dark-mode .section-kicker {
+    background: #263a55;
+    color: #d9e4f2;
+    border-color: #50627b;
+}
+
+body.dark-mode .model-pills span,
+body.dark-mode .engine-tags span {
+    background: #30445f;
+    color: #dce6f2;
+    border-color: #50627b;
+}
+
+/* Datos y características */
+body.dark-mode .fact {
+    background: #2b3c54;
+}
+
+body.dark-mode .fact p {
+    color: #c6d2e1;
+}
+
+body.dark-mode .tip-line,
+body.dark-mode .callout,
+body.dark-mode .authors-note {
+    background: #2a3c55;
+    color: #e5edf7;
+}
+
+body.dark-mode .tip-line p,
+body.dark-mode .callout p,
+body.dark-mode .authors-note p {
+    color: #d0dbea;
+}
+
+/* Sección de motores */
+body.dark-mode .engine-tab {
+    color: #aebdd0;
+}
+
+body.dark-mode .engine-tab.active {
+    color: #ffffff;
+    border-color: #d0a080;
+}
+
+body.dark-mode .fact {
+    border-color: #40516a;
+}
+
+/* Sección de autores */
+body.dark-mode .author-card {
+    background: #22334b;
+}
+
+body.dark-mode .author-card h3 {
+    color: #f1f5fb;
+}
+
+body.dark-mode .author-card p {
+    color: #c0ccdc;
+}
+
+/* Elementos de clasificación */
+body.dark-mode .mini-pair p,
+body.dark-mode .mini-pair b {
+    color: #d3deeb;
+}
+
+body.dark-mode .model-pills span:hover {
+    background: #405674;
+}
+
+/* Nota final */
+body.dark-mode .closing-note {
+    background: linear-gradient(110deg, #09182d, #263e60);
+}
+
+/* Pie de página */
+body.dark-mode .site-footer {
+    background: #080f1d;
+}
+
+/* Botón de cambio de tema */
+body.dark-mode .theme-toggle {
+    background: #30445f;
+    color: #ffffff;
+    border-color: #7188a7;
+}
+
+/* Transición suave */
+body,
+body * {
+    transition-property: background-color, color, border-color;
+    transition-duration: 0.25s;
+}
 body.soft-light{--ink:#1f305f;--muted:#68778b;--paper:#f6f1e9;--white:#fffdf8;--navy:#1f305f;--navy2:#304b78;--coral:#c0765a;--coral-light:#d0a88a;--aqua:#6f8eaf;--gold:#c49a6d;--line:#ded4c8}.soft-light .site-header{background:#1f305f}.soft-light .models-section{background:linear-gradient(133deg,#e6edf4,#f8f0e6 48%,#e8edf4)}.soft-light .authors-section{background:radial-gradient(ellipse at 90% 10%,#e6d5c2 0,transparent 23%),linear-gradient(120deg,#f3e8dc,#edf1f5 48%,#e9e3da)}.soft-light .engines-section{background:radial-gradient(ellipse at 5% 15%,#e8d5bf 0,transparent 24%),radial-gradient(ellipse at 94% 55%,#d6e0eb 0,transparent 29%),linear-gradient(150deg,#f6f0e8,#e9eef4 57%,#f3e5d8)}
 @media(max-width:900px){.authors-layout{grid-template-columns:1fr;gap:24px}.author-cards{grid-template-columns:1fr 1fr}.author-card{align-items:flex-start;flex-direction:column}.author-photo{width:100%;height:210px;object-position:center 22%}.maria-logo{width:153px}}
 @media(max-width:620px){.maria-logo-link{min-width:165px;min-height:48px;padding:8px 12px;margin-bottom:12px}.maria-logo{width:138px;max-height:35px}.authors-layout{gap:19px}.author-cards{grid-template-columns:1fr}.author-card{flex-direction:row;align-items:flex-start;padding:14px;gap:12px}.author-photo{width:82px;height:108px;object-fit:cover;flex:none}.author-card p{font-size:10px}.author-role{font-size:8px}.author-focus{font-size:7px!important}.authors-note{margin-top:15px}.maria-copy h2{font-size:41px}}
