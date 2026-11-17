@@ -1,0 +1,13 @@
+BLOG ENTRE DATOS
+
+Para abrir el blog, haz doble clic en index.html. Mantén juntos los archivos del blog y la carpeta images:
+- index.html: contenido y estructura
+- styles.css: diseño, color y animaciones adaptables
+- script.js: filtros, menú, progreso, laboratorio simulado y reto interactivo
+- images/: ilustraciones vectoriales, logo oficial de MariaDB y las dos fotografías de los autores
+
+El laboratorio muestra datos ficticios de ejemplo; no necesita ni se conecta a un servidor MariaDB. La primera foto que compartiste quedó asociada a Jonathan y la segunda a Gislaine; puedes intercambiarlas en index.html si corresponde. Las descripciones profesionales son textos de presentación editables; ajústenlos si quieren reflejar otros intereses o aportes.
+
+El sitio usa una paleta de inspiración clásica azul y marrón. El logo blanco oficial se incluye como SVG local y conserva su diseño original.
+
+Se incluyen enlaces a la documentación e historia oficial de MariaDB en el pie del blog. Las fuentes de Google Fonts se cargan si hay conexión; sin internet se usan fuentes de respaldo.
