@@ -17,7 +17,10 @@ if ('IntersectionObserver' in window) {
   navLinks.forEach(link => { const section = document.querySelector(link.hash); if (section) navObserver.observe(section); });
 }
 
-document.querySelector('#theme-toggle').addEventListener('click', () => document.body.classList.toggle('soft-light'));
+// Cambiar entre tema claro y oscuro
+document.querySelector('#theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
 
 document.querySelectorAll('.segment').forEach(button => button.addEventListener('click', () => {
   document.querySelectorAll('.segment').forEach(tab => {
@@ -105,3 +108,4 @@ document.querySelectorAll('.quiz-options button').forEach(button => button.addEv
     ? '¡Exacto! Un índice funciona como el índice de un libro: ayuda al motor a localizar información sin revisar cada fila.'
     : 'Casi. Piensa en el índice al final de un libro: te lleva a una página sin leerlo entero. Prueba otra vez.';
 }));
+
